@@ -11,7 +11,9 @@ import { CatsModule } from './cats/cats.module';
     GraphQLModule.forRoot({
       autoSchemaFile: 'schema.gql',
     }),
-    MongooseModule.forRoot('mongodb://localhost/nest'),
+    MongooseModule.forRoot(
+      'mongodb+srv://ashar1:ashar1@cluster0.ybb8j.mongodb.net/nest_graphQL?retryWrites=true&w=majority',
+    ),
   ],
   controllers: [AppController],
   providers: [AppService],
